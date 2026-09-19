@@ -69,8 +69,7 @@ Claude walks you through the rest.
 
 ### 2. Make your one-liner
 
-1. Open a new chat and **attach your pitch deck first**. The skill starts from your deck. PDF works best. PPTX and DOCX also work, and you can paste a URL instead.
-2. Send `one-liner`.
+Open a new chat and **attach your pitch deck first**. The skill starts from your deck. PDF works best. PPTX and DOCX also work, and you can paste a URL instead.
 
 No deck? Say so, and the skill asks four short questions instead.
 
