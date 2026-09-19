@@ -55,6 +55,15 @@ users paid a negative rate.
 
 Everything happens in a normal chat on [claude.ai](https://claude.ai) or in the Claude desktop app. No terminal needed.
 
+### Recommended settings
+
+| Setting | Recommended |
+|---|---|
+| Model | Opus or Fable |
+| Thinking (Effort in Claude Code) | High or above |
+
+The skill runs three tests in order and rejects out loud. That reasoning is where the quality comes from, so a weaker model or less thinking gives you weaker lines.
+
 ### 1. Set up (once)
 
 1. Download [`SKILL.md`](./SKILL.md) from this repository.
@@ -78,6 +87,12 @@ No deck? Say so, and the skill asks four short questions instead.
 The skill shows what it read from your deck, asks one question at a time for anything missing (you can skip any of them), then gives you three candidates, one selected One-liner (Hook), and one Blurb.
 
 The One-liner (Hook) and the Blurb are always written in English. The commentary follows the conversation language, and a `Meaning:` line is added under the One-liner (Hook) when the conversation is not in English.
+
+### If the proposed one-liner is weak
+
+It is almost always the input. The deck is missing something, inaccurate, or unclear, and the skill can only work with what it was given. Feed it the right information and it proposes a high-quality One-liner (Hook).
+
+You can skip any of the questions. Every skip removes material the tests would have used, so each one lowers the quality of the line you get back. Skip only what you genuinely cannot answer.
 
 ### Follow-ups the skill handles
 
