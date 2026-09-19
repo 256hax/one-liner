@@ -1,6 +1,6 @@
 ---
-name: one-liner
-description: "Creates a startup One-liner (Hook), max 5 words, and a Blurb (max 300 characters). Reads the pitch deck (PDF/PPTX/DOCX), asks the founder for any missing information, generates and compares 3 candidates, and selects one. Also outputs the rejection reasons for teaching purposes. The same One-liner (Hook) and Blurb are used for both the Colosseum hackathon submission and X posts. Always trigger when the user mentions \"one-liner\", \"ワンライナー\", \"one-liner作って\", \"Hook\", \"フック\", \"Blurb\", \"ブラーブ\", \"一行\", \"ピッチの一行\", \"タグライン\", \"tagline\", \"pitch line\", or \"デッキ読んで一行\". Improving or scoring the pitch deck as a whole is out of scope for this skill."
+name: "one-liner"
+description: "Creates a startup One-liner (Hook), max 5 words, and a Blurb (max 300 characters). Reads the pitch deck (PDF/PPTX/DOCX), asks the founder for any missing information, generates and compares 3 candidates, and selects one. Also outputs the rejection reasons for teaching purposes. The same One-liner (Hook) and Blurb are used for both the Colosseum hackathon submission and X posts. Always trigger when the user mentions \"one-liner\", \"Hook\", \"Blurb\", \"tagline\", \"pitch line\", or \"elevator pitch line\", or asks for a one-line pitch from a deck, in any language. Improving or scoring the pitch deck as a whole is out of scope for this skill."
 ---
 
 # One-liner
@@ -160,15 +160,38 @@ The reference can be a company or a category. The twist is one concept, not two.
 state the difference from the reference in a single word or short phrase, the format is wrong.
 
 **The reference must be impossible to read literally.** A product or company name is safe:
-nobody thinks `Reddit for agents` is run by Reddit. An institution, a document or a profession
+`Reddit for agents` is read as a forum like Reddit, not as something Reddit runs. An institution, a document or a profession
 is not safe when the real thing exists in the product's own field. A workout-planning
 app pitched as `Prescriptions for your workouts` is read as a service that issues real
 prescriptions, because in health a prescription is an actual document. A replacement,
 `A pharmacy for training plans`, is read as an online pharmacy, and
 `Doctor's orders for runners` is read as telemedicine. All three fail the same way.
-Run the real-thing test in Step 4 before spending a slot on an Analogue, and do not
-count "it matches the pictures in the deck" in a line's favour: readers see the line before
-they see any slide.
+
+**An Analogue is a transplant, not a metaphor.** The product must literally be the
+reference's kind of thing, moved somewhere new. `Reddit for agents` is literally a forum.
+`Prediction markets on Twitch streams` is literally a prediction market. The test is one
+sentence: "this product is a kind of [reference]". If the honest sentence is "it works like
+[reference]", the line is a metaphor, and readers take metaphors at face value.
+`Flight plans for your workouts` is read as a travel product: a workout app is not a kind of
+flight plan. Leaving the product's own field does not help, and it is worst when one word of
+the reference is literally true. The app really does make plans, so the reader takes `plans`
+literally and `flight` as the market. Places, institutions, documents and professions almost
+always fail this sentence. Brand names and on-screen categories usually pass it.
+
+**A rejected metaphor takes its whole family with it.** Prescriptions, pharmacy and doctor's
+orders are one picture, not three ideas. Decks are often illustrated with a single metaphor
+from cover to close, and after reading one, that picture feels like the product itself. It is
+the deck's picture, not the reader's. When a metaphor is rejected for being misread, the
+founder's included, do not replace it with its neighbour. The replacement is a literal line
+(Descriptive or Claim) or a reference from an unrelated family.
+
+**Judge the formats fresh for every deck.** An Analogue that won on the previous deck says
+nothing about this one. For products in regulated or expert fields (finance, health, law),
+the literal line usually survives and the metaphor usually does not.
+
+Run the real-thing test and the first-words test in Step 4 before spending a slot on an
+Analogue, and do not count "it matches the pictures in the deck" in a line's favour: readers
+see the line before they see any slide.
 
 **Descriptive** — verb + object + context. Imperative, direct.
 `Shop anything online with stablecoins` / `Launch tokens without seeding liquidity` / `Move money globally for cents`
@@ -240,9 +263,19 @@ because a reader who does not understand the product cannot get excited by it.
      real object or institution, in the product's own field? If yes, the reader takes the
      line as the business itself, not as a figure of speech. Prescriptions are real in health.
      So are pharmacies and doctor's orders. Reject, even when
-     the metaphor fits the mechanism perfectly. Do not argue the line back in ("nobody thinks
-     a fitness app writes real prescriptions"): that is the reasoning of someone who has read the
-     deck, and the reader has not.
+     the metaphor fits the mechanism perfectly.
+   - **First-words test, for every Analogue.** Readers skim from the left and stop early. Cut
+     the line at the end of the reference (usually the first two words) and name the kind of
+     product those words alone describe. `Flight plans` says travel planning. Then ask: is
+     this product literally that kind of thing? `Reddit` says a forum, and the product is a
+     forum: pass. A workout app is not travel planning: reject, however exact the rest of the
+     line is. You read the line from its last words backwards, because you already know the
+     product. The reader does not.
+   - **Never defend a line with what the reader cannot know.** "Nobody thinks a fitness app
+     writes real prescriptions" and "nobody thinks a fitness app sells flights" are the
+     reasoning of someone who has read the deck. This applies to the Why cell of the selected
+     row as much as to an argument with the founder. If the Why for your pick starts with
+     "nobody thinks", the line has failed.
 
    Compare the stranger's sentence with the What from Step 2. If they do not match, reject.
 
@@ -253,12 +286,24 @@ because a reader who does not understand the product cannot get excited by it.
    your own, so the founder has to raise the same objection twice. Reasons also travel to the
    Blurb: a word removed from the Hook for being misread must not reappear there.
 
+   For this check to work, write every misreading in the reader's words, not in the field's:
+   "I thought it was about medicine", not "a prescription is a regulated document in health".
+   The narrow version is true and useless: it is worded so that it can only ever hit the line
+   it was written for. The reader's version hits every line in the same family, yours included.
+
+   **Your cold read is the weakest test here.** You wrote the line and you have read the deck,
+   so your stranger's sentence will nearly always match the What. When a real reader says they
+   pictured something else, that outranks every tick above (see Step 6). When two candidates
+   are close, prefer the one with no metaphor in it.
+
 2. **Exciting** — does it make the reader feel something? Curiosity, surprise, even irritation.
    "Wait, negative interest loans?" A correct but boring line loses to a correct and sharp one.
 
    **Name the collision.** Write down the two words in the line that pull against each other.
    "Negative" against "interest". "Esports" (screens) against "home cooks" (a kitchen). If no two words are in tension, the line is a description, and Exciting fails —
-   do not tick it just because Unambiguous passed. A line where every word points the same
+   do not tick it just because Unambiguous passed. The reverse trap: the further a reference
+   sits from the product, the bigger the collision and the bigger the chance of a misreading.
+   A large collision is never a reason to go easy on test 1. A line where every word points the same
    way ("live cook-offs, most votes wins") is accurate, complete, and dead.
 3. **Truthful** — it does not have to be 100% true. It has to paint the right picture, and the
    Blurb has to be able to back it up. Hobba can claim negative interest because over 90% of
@@ -289,7 +334,7 @@ rejected line sitting in the first row gets mistaken for the recommendation.
   cell with "Selected." or "Rejected." The column already says it.
 - **Only the selected row carries an icon.** Do not use ❌ or any X mark for rejected rows.
   In many countries an X is how you tick a box or mark a choice on a form, so a founder
-  outside Japan can read it as "picked". Plain text cannot be misread, and one icon in the
+  can read it as "picked". Plain text cannot be misread, and one icon in the
   whole table makes the selected row stand out more.
 - **Bold the selected Hook only.** Rejected candidates stay plain text, so bold means "ship this"
   and nothing else.
@@ -305,9 +350,9 @@ rejected line sitting in the first row gets mistaken for the recommendation.
 - **If all three fail**, every row is `Rejected` and the line above the table reads
   `⚠️ No One-liner (Hook) selected`, followed by what is missing. Do not bold any candidate.
 
-When the commentary is in Japanese, the Result labels become `✅ 採用` and `却下`. The test
-names (Unambiguous, Exciting, Truthful) stay in English so they match the pass line under
-the table.
+When the commentary is in another language, translate the Result labels into that language
+and keep the ✅ on the selected row. The test names (Unambiguous, Exciting, Truthful) stay in
+English so they match the pass line under the table.
 
 ---
 
@@ -372,8 +417,8 @@ by a real reader. It outranks your own verdict. Do not just explain and move on.
 table. Row one is the current best as the baseline, labelled `✅ Current best`. A candidate
 that passes all three tests but loses to the baseline is labelled `Runner-up`, and its Why
 says what it would be better for. Everything else is `Rejected`. If a new line beats the
-baseline, it takes row one and the old one becomes `Runner-up`. In Japanese: `✅ 現時点の1位`,
-`次点`, `却下`.
+baseline, it takes row one and the old one becomes `Runner-up`. In a non-English conversation,
+translate these labels the same way as the Result labels in Step 4.
 
 **The founder picks a different line from yours.** Run the three tests on it honestly. If it
 passes, it is theirs: say so, and check the Blurb still backs it. If it fails, say which test
@@ -389,8 +434,8 @@ believable, and recount it.
 Hook and Blurb are **always in English**, whatever language the conversation is in. They are
 submitted in English, and translating them changes both the character count and the nuance.
 
-The commentary defaults to English. Switch the commentary to Japanese if asked — the Hook and
-Blurb themselves stay English.
+The commentary defaults to English. If the founder writes in another language or asks for
+one, write the commentary in that language. The Hook and Blurb themselves stay English.
 
 **When the conversation is not in English, add a `Meaning:` line under the selected Hook**, in
 the conversation's language: one plain sentence saying what the Hook means, not a word-for-word
@@ -496,8 +541,9 @@ confusion this skill removes.
 
 ### Not from any source
 
-The **Claim format**, the **cold read**, the **real-thing test**, **"turn every rejection
-reason on your own pick"**, and **Step 6** are this skill's own additions. The sources above
+The **Claim format**, the **cold read**, the **real-thing test**, the **first-words test**,
+the **transplant rule**, the **metaphor-family rule**, **"turn every rejection reason on your own pick"**, and
+**Step 6** are this skill's own additions. The sources above
 name two formats only. Revisit if Claims start winning by default: a Claim is easier to write
 than a good Analogue, and that is a risk.
 
