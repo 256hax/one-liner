@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude Code (local state / personal settings)
+.claude/settings.local.json
+.claude/.cc-writes/
+CLAUDE.local.md
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs & temp
+*.log
+tmp/
+.cache/
