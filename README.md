@@ -6,7 +6,7 @@ Built for founders submitting to Colosseum hackathons. The same One-liner (Hook)
 
 ## Credits
 
-The core method (5 words max, Analogue and Descriptive formats, unambiguous then exciting then truthful) follows [Josip Volarević's one-liner approach](https://x.com/JosipVolarevic2/status/2096885934532768013) and Michael Seibel's YC pitch advice. The Claim format, the cold read, the real-thing test, and the follow-up handling are this skill's own additions. Full sources are listed under **References** in [`SKILL.md`](./SKILL.md).
+The core method (5 words max, Analogue and Descriptive formats, unambiguous then exciting then truthful) follows [Josip Volarević's one-liner approach](https://x.com/JosipVolarevic2/status/2096885934532768013) and [Michael Seibel's YC pitch advice](https://www.ycombinator.com/blog/how-to-pitch-your-company/). The Claim format, the cold read, the real-thing test, and the follow-up handling are this skill's own additions. Full sources are listed under **References** in [`SKILL.md`](./SKILL.md).
 
 ## Why
 
