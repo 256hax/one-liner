@@ -71,14 +71,23 @@ The skill runs three tests in order and rejects out loud. That reasoning is wher
 3. Send this:
 
    ```
-   I want to use this SKILL.md as an agent skill. How do I set it up?
+   I want to use this SKILL.md as an agent skill on claude.ai or the Claude desktop app.
+   Can you zip this SKILL.md and then rename it to one-liner.skill?
+
+   After that, guide me on how to use this Agent Skill.
    ```
 
 Claude walks you through the rest.
 
 ### 2. Make your one-liner
 
-Open a new chat and **attach your pitch deck first**. The skill starts from your deck. PDF works best. PPTX and DOCX also work, and you can paste a URL instead.
+Open a new chat, attach your pitch deck, and use this prompt:
+
+```
+I want to create one-liner.
+```
+
+The skill starts from your deck. PDF works best. PPTX and DOCX also work, and you can paste a URL instead.
 
 No deck? Say so, and the skill asks four short questions instead.
 
