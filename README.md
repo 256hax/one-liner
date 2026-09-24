@@ -1,6 +1,6 @@
 # one-liner
 
-A Claude skill that writes a startup **One-liner (Hook)** (max 5 words) and a **Blurb** (max 300 characters) from a pitch deck.
+A Claude skill that writes a startup **One-liner (Hook)** (max 5 words) and a **Blurb** (max 250 characters) from a pitch deck.
 
 Built for founders submitting to Colosseum hackathons. The same One-liner (Hook) and Blurb go to two places: the Colosseum submission form and the founder's X posts.
 
@@ -48,7 +48,7 @@ Hobba lets you borrow USDC against your BTC. It borrows more against the same co
 farms that into yield, and uses the yield to cover your interest. Over 90% of closed-beta
 users paid a negative rate.
 
-207 / 300 characters
+207 / 250 characters
 ```
 
 ## How to use
@@ -117,7 +117,7 @@ You can skip any of the questions. Every skip removes material the tests would h
 - **Cold read.** Claude has read the deck, so every line looks clear to it. The skill forces a stranger's reading of the One-liner (Hook) alone before passing it.
 - **Substitution test.** If three other projects in the same category could use the same line, it is rejected.
 - **Real-thing test.** A metaphor that exists as a real object in the product's own field (a prescription in a health app, for example) gets read literally, so it is rejected.
-- **The 300-character Blurb limit** is this skill's own working standard, not a rule from any source. Colosseum allows more.
+- **The 250-character Blurb limit** follows [toly's (Solana co-founder) advice](https://x.com/toly/status/1746250598608241148): "No more than a 250 character blurb on what X does." Colosseum allows more.
 
 ## Scope
 
