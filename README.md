@@ -6,7 +6,7 @@ Built for founders submitting to Colosseum hackathons. The same One-liner (Hook)
 
 ## Credits
 
-The core method (5 words max, Analogue and Descriptive formats, unambiguous then exciting then truthful) follows [Josip Volarević's one-liner approach](https://x.com/JosipVolarevic2/status/2096885934532768013) and [Michael Seibel's YC pitch advice](https://www.ycombinator.com/blog/how-to-pitch-your-company/). The Claim format, the cold read, the real-thing test, and the follow-up handling are this skill's own additions. Full sources are listed under **References** in [`SKILL.md`](./SKILL.md).
+The core method (5 words max, Analogue and Descriptive formats, unambiguous then exciting then truthful) follows [Josip Volarević's one-liner approach](https://x.com/JosipVolarevic2/status/2096885934532768013) and [Michael Seibel's YC pitch advice](https://www.ycombinator.com/blog/how-to-pitch-your-company/). The Claim format, the cold read, the real-thing test, and the follow-up handling are this skill's own additions. Full sources are listed under **References** in [`SKILL.md`](./SKILL/SKILL.md).
 
 ## Why
 
@@ -66,18 +66,8 @@ The skill runs three tests in order and rejects out loud. That reasoning is wher
 
 ### 1. Set up (once)
 
-1. Download [`SKILL.md`](./SKILL.md) from this repository.
-2. Open a new chat in Claude and attach `SKILL.md`.
-3. Send this:
-
-   ```
-   I want to use this SKILL.md as an agent skill on claude.ai or the Claude desktop app.
-   Can you zip this SKILL.md and then rename it to one-liner.skill?
-
-   After that, guide me on how to use this Agent Skill.
-   ```
-
-Claude walks you through the rest.
+1. Download [`SKILL.zip`](https://github.com/256hax/one-liner/releases/latest/download/SKILL.zip) from the latest release.
+2. In Claude, open **Settings > Customize > Skills** and upload the zip.
 
 ### 2. Make your one-liner
 
