@@ -26,4 +26,4 @@ CLAUDE.local.md
 *.log
 tmp/
 .cache/
-SKILL.zip
+*.zip
